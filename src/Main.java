@@ -8,10 +8,20 @@ public class Main {
         System.out.print("Zahl 1: ");
         double a = scanner.nextDouble();
 
-        System.out.print("Zahl 2: ");
-        double b = scanner.nextDouble();
+        double b;
 
-        double result = a * b;
+        do {
+            System.out.print("Zahl 2: ");
+            b = scanner.nextDouble();
+
+            if (b == 0) {
+                System.out.println("Fehler: Division durch 0 ist nicht erlaubt. Bitte gib einen gültigen Wert ein.");
+            }
+
+        } while (b == 0);
+
+
+        double result = a / b;
         System.out.println("Ergebnis: " + result);
     }
 }
