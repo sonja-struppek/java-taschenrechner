@@ -11,7 +11,7 @@ public class Main {
         System.out.print("Zahl 2: ");
         double b = scanner.nextDouble();
 
-        double result = a + b;
+        double result = a - b;
         System.out.println("Ergebnis: " + result);
     }
 }
